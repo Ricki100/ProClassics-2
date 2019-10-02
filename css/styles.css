@@ -32,6 +32,7 @@ body,
 html {
     width: 100%;
 	height: 100%;
+	background-color: #9f7b60;
 }
 .tag{
 	background:#0000008c;
@@ -39,12 +40,24 @@ html {
 	border-radius:10px;
 }
 
+.zoom{
+	transition: all .5s;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.zoom:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5); 
+  }
+
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto;
 	padding: 10px;
 	padding-left:5%;
-	background: url('../images/download-background.jpg') center center no-repeat;
 	background-size: cover; 
   }
   
@@ -1288,6 +1301,13 @@ input[type='checkbox'] {
 	
 }
 
+.basic-4.bottom {
+	padding-top: 1rem;
+	padding-bottom: 6.75rem;
+	
+}
+
+
 .basic-4 .text-container {
 	margin-bottom: 3.5rem;
 	text-align: center;
@@ -1345,7 +1365,7 @@ input[type='checkbox'] {
 .form {
 	padding-top: 6.25rem;
 	padding-bottom: 5.625rem;
-	background: url('../images/contact-background.jpg') center bottom no-repeat;
+	
 	background-size: cover; 
 }
 
@@ -2106,3 +2126,7 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+.navbar-custom{
+	padding-left:5%;
+}
