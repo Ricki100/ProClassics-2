@@ -251,13 +251,12 @@
 
 
    
-
-    <!-- Contact -->
-    <div id="contact" class="form wow fadeInUp delay-1" style="animation-duration: 1.5s">
+<!-- Contact -->
+<div id="contact" class="form wow fadeInUp delay-1" style="animation-duration: 1.5s">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>CONTACT</h2>
+                    <h2 style="color:black;">CONTACT</h2>
                     <ul class="list-unstyled li-space-lg">
                         <li class="address">Are you interested in this product? Don't hesitate to give us a call or just use the contact form below</li>
                         <li><i class="fas fa-map-marker-alt"></i>1/2kk ilford Road, Ardbennie, Harare, Zimbabwe</li>
@@ -269,40 +268,51 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                       
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
+                   <!-- Contact Form -->
+                   <form  class="gform pure-form pure-form-stacked" method="POST" data-email="proclassictaurai@gmail.com"
+                   action="https://script.google.com/macros/s/AKfycby4_ISXscIVXu5pfIU1GTVy5aiO-ZRXZ3LUJAb0/exec"   id="contactForm" data-toggle="validator" data-focus="false">
+                       <div class="form-group">
+                           <input type="text" class="form-control-input" name="name" id="cname" required>
+                           <label class="label-control" for="cname">Name</label>
+                           <div class="help-block with-errors"></div>
+                       </div>
+                       <div class="form-group">
+                           <input type="email" class="form-control-input" name="email" id="cemail" required>
+                           <label class="label-control" for="cemail">Email</label>
+                           <div class="help-block with-errors"></div>
+                       </div>
+                       <div class="form-group">
+                           <input type="text" class="form-control-input" name="phone" id="cphone" required>
+                           <label class="label-control" for="cemail">Phone</label>
+                           <div class="help-block with-errors"></div>
+                       </div>
+                       <div class="form-group">
+                           <textarea class="form-control-textarea" name="message" id="cmessage" required></textarea>
+                           <label class="label-control" for="cmessage">Your message</label>
+                           <div class="help-block with-errors"></div>
+                       </div>
+                      
+                       <div class="form-group">
+                           <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                       </div>
+                       <div class="form-message">
+                           <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                       </div>
+                       <div class="thankyou_message" style="display:none;color:rgba(148, 148, 148, 0.589)" id=thanks>
+                               <h2><em>Thanks</em> for contacting us!
+                                 We will get back to you soon!</h2>
+                             </div>
+                   </div>
+                   </form>
+                   <!-- end of contact form -->
+    
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form -->
     <!-- end of contact -->
-
-
+    
+    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
@@ -310,7 +320,7 @@
                 <div class="col-md-4">
                     <div class="footer-col">
                         <h4>About Us</h4>
-                        <p>Radial and Cross Ply Tyres is a tyre servicing company. We specialize in the supply and delivery 
+                        <p style="color:white;">Radial and Cross Ply Tyres is a tyre servicing company. We specialize in the supply and delivery 
                             of brand new tyres of all sizes ranging from passenger tyres, truck and bus tyres, tractor tyres and 
                             earth mover tyres. We also do repairs and retreading. We can survey your fleet, determine the condition of its maintenance, 
                             and recommend corrections for better management and ultimately lower cost per kilometer.</p>
@@ -318,17 +328,7 @@
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col middle">
-                        <h4>Important Links</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Our business partners <a class="turquoise" href="#your-link">startupguide.com</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
@@ -370,7 +370,8 @@
         </div> <!-- end of container -->
     </div> <!-- end of footer -->  
     <!-- end of footer -->
-
+    
+       
 
     <!-- Copyright -->
     <div class="copyright">
@@ -399,5 +400,8 @@
     <script>
     new WOW().init();
     </script>
+     <script data-cfasync="false" 
+     src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+     <script data-cfasync="false"  src="form-submission-handler.js"></script>
 </body>
 </html>
