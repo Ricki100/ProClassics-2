@@ -270,19 +270,25 @@
                 <div class="col-lg-6 offset-lg-3">
                     
                     <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <form  class="gform pure-form pure-form-stacked" method="POST" data-email="proclassictaurai@gmail.com"
+                    action="https://script.google.com/macros/s/AKfycby4_ISXscIVXu5pfIU1GTVy5aiO-ZRXZ3LUJAb0/exec"   id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
+                            <input type="text" class="form-control-input" name="name" id="cname" required>
                             <label class="label-control" for="cname">Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
+                            <input type="email" class="form-control-input" name="email" id="cemail" required>
                             <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <input type="text" class="form-control-input" name="phone" id="cphone" required>
+                            <label class="label-control" for="cemail">Phone</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" name="message" id="cmessage" required></textarea>
                             <label class="label-control" for="cmessage">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -293,6 +299,11 @@
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
+                        <div class="thankyou_message" style="display:none;color:rgba(148, 148, 148, 0.589)" id=thanks>
+								<h2><em>Thanks</em> for contacting us!
+								  We will get back to you soon!</h2>
+							  </div>
+					</div>
                     </form>
                     <!-- end of contact form -->
 
@@ -376,5 +387,8 @@
     <script>
     new WOW().init();
     </script>
+<script data-cfasync="false" 
+src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+<script data-cfasync="false"  src="form-submission-handler.js"></script>
 </body>
 </html>
