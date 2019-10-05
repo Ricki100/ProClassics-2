@@ -188,13 +188,14 @@ https://templatemo.com/tm-520-highway
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
-          <h3 class="header-title">Say hello to <em>Highway</em></h3>
+          <h3 class="header-title">Send Us a <em>Message</em></h3>
           <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
         </div>
         <!-- Modal Body -->
         <div class="modal-body">
           <div class="col-md-6 col-md-offset-3">
-            <form id="contact" action="" method="post">
+            <form  class="gform pure-form pure-form-stacked" method="POST" data-email="proclassictaurai@gmail.com"
+            action="https://script.google.com/macros/s/AKfycby4_ISXscIVXu5pfIU1GTVy5aiO-ZRXZ3LUJAb0/exec" id="contact" action="" method="post">
                 <div class="row">
                     <div class="col-md-12">
                       <fieldset>
@@ -208,6 +209,11 @@ https://templatemo.com/tm-520-highway
                     </div>
                     <div class="col-md-12">
                       <fieldset>
+                        <input name="phone" rows="6" class="form-control" id="phone" placeholder="Your phone number..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
                         <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
                       </fieldset>
                     </div>
@@ -217,6 +223,11 @@ https://templatemo.com/tm-520-highway
                       </fieldset>
                     </div>
                 </div>
+                <div class="thankyou_message" style="display:none;color:rgba(148, 148, 148, 0.589)" id=thanks>
+                        <h2><em>Thanks</em> for contacting us!
+                          We will get back to you soon!</h2>
+                      </div>
+            </div>
             </form>
           </div>
         </div>
@@ -239,6 +250,9 @@ https://templatemo.com/tm-520-highway
     <script>
     new WOW().init();
     </script>
+    <script data-cfasync="false" 
+    src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+    <script data-cfasync="false"  src="form-submission-handler.js"></script>
 
     
 </body>
