@@ -302,7 +302,7 @@ nav {
 
 #video-container .video-content .inner a {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #video-container .video-content .inner .scroll-icon {
@@ -560,32 +560,71 @@ nav {
 
 
 
-footer {
-  width: 100%;
-  height: 80px;
-  background-color: #313131;
+/**********************/
+/*     16. Footer     */
+/**********************/
+.footer {
+	padding-top: 5rem;
+	background-color: #262431;
 }
 
-footer p {
-  text-align: center;
-  color: #fff;
-  font-weight: 200;
-  font-size: 13px;
-  text-transform: uppercase;
-  padding-top: 33px;
-  letter-spacing: 0.5px;
+.footer .footer-col {
+	margin-bottom: 2.25rem;
 }
 
-footer a {
-  color: #aaa;
-  text-decoration: none;
+.footer h4 {
+	margin-bottom: 1rem;
 }
 
-footer a:hover {
-  text-decoration: none;
-  color: #aaa;
+.footer .list-unstyled .fas {
+	color: red;
+	font-size: 0.5rem;
+	line-height: 1.375rem;
 }
 
+.footer .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+.footer .fa-stack {
+	margin-bottom: 0.75rem;
+	margin-right: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.footer .fa-stack .fa-stack-1x {
+    color: #262431;
+	transition: all 0.2s ease;
+}
+
+.footer .fa-stack .fa-stack-2x {
+	color: #f1f1f8;
+	transition: all 0.2s ease;
+}
+
+.footer .fa-stack:hover .fa-stack-1x {
+	color: #f1f1f8;
+}
+
+.footer .fa-stack:hover .fa-stack-2x {
+    color: red;
+}
+
+
+/*************************/
+/*     17. Copyright     */
+/*************************/
+.copyright {
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	background-color: #262431;
+	text-align: center;
+}
+
+.copyright .p-small {
+	color: #f1f1f8;
+	opacity: 0.6;
+}
 
 
 .masonry-portfolio .container-fluid {
@@ -1463,3 +1502,87 @@ footer a:hover {
     margin: 0 auto;
     height:100%;
 }
+
+/*************************/
+/*     02. Preloader     */
+/*************************/
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #2f2c3d;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #fff;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+#products{
+  background-color: #000;
+  margin:0;
+  padding:2%;
+  color:white;
+  text-align: center;
+}
+
+.button{
+  margin-top:4%;
+  border-radius:5px;
+  background-color:red;
+  padding:1%;
+  padding-left:2%;
+  padding-right:2%;
+  color:white;
+ 
+  }
+
+  .button a{
+    text-decoration: none;
+  }
+
