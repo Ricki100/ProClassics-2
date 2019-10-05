@@ -38,8 +38,41 @@ html {
 	padding:15px;
 	border-radius:10px;
 }
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 10px;
+	padding-left:5%;
+	background-size: cover; 
+  }
+
+  .headings{
+	text-transform: uppercase;
+	color:black;
+}
+
+#stock{
+	color:black;
+}
+
+.text{
+	color:black;
+}
+
+.blue{
+	color:blue;
+}
+
+.basic-4.bottom {
+	padding-top: 1rem;
+	padding-bottom: 6.75rem;
+	
+}
+
+
 body, p {
-	color: #f1f1f8; 
+	color: black; 
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 }
 
@@ -1270,7 +1303,7 @@ input[type='checkbox'] {
 .basic-4 {
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
-	background: url('../images/download-background.jpg') center center no-repeat;
+
 	background-size: cover; 
 }
 
@@ -1331,7 +1364,7 @@ input[type='checkbox'] {
 .form {
 	padding-top: 6.25rem;
 	padding-bottom: 5.625rem;
-	background: url('../images/contact-background.jpg') center bottom no-repeat;
+
 	background-size: cover; 
 }
 
