@@ -79,6 +79,14 @@ body, p {
 	border-radius:10px;
 }
 
+.type{
+	font-size:180%;
+}
+
+.tagline{
+	font-size:100%;
+}
+
 .dropbtn {
 	background-color: red;
 	color: white;

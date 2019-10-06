@@ -64,6 +64,14 @@ html {
 	color:blue;
 }
 
+.type{
+	font-size:180%;
+}
+
+.tagline{
+	font-size:100%;
+}
+
 .basic-4.bottom {
 	padding-top: 1rem;
 	padding-bottom: 6.75rem;

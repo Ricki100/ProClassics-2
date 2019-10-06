@@ -33,6 +33,16 @@ html {
     width: 100%;
 	height: 100%;
 }
+
+.type{
+	font-size:180%;
+}
+
+.tagline{
+	font-size:100%;
+}
+
+
 .tag{
 	background:#0000008c;
 	padding:15px;
